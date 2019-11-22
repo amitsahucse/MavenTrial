@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.bosch.cloudia.selenium.GoogleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.988 sec <<< FAILURE! - in com.bosch.cloudia.selenium.GoogleTest
+com.bosch.cloudia.selenium.GoogleTest  Time elapsed: 9.987 sec  <<< ERROR!
+java.lang.Exception
+	at com.bosch.cloudia.selenium.GoogleTest.openBrowser(GoogleTest.java:44)
+

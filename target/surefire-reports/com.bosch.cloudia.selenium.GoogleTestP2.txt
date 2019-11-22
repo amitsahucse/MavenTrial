@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.bosch.cloudia.selenium.GoogleTestP2
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.245 sec <<< FAILURE! - in com.bosch.cloudia.selenium.GoogleTestP2
+com.bosch.cloudia.selenium.GoogleTestP2  Time elapsed: 8.245 sec  <<< ERROR!
+java.lang.Exception
+	at com.bosch.cloudia.selenium.GoogleTestP2.openBrowser(GoogleTestP2.java:49)
+
