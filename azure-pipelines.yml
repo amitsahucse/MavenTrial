@@ -9,11 +9,24 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
 
-steps:
 - task: Maven@3
+  displayName: MandatoryTestsRun
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m -DrunSuite=**/*.java -Dtests123=Mandatory,Mandatory3 -Dmaven.test.failure.ignore=true -DtestFailureIgnore=true'
+    mavenOptions: '-Xmx3072m -DrunSuite=**/*.java -Dtests123=Mandatory'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.8'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    goals: 'test'
+    
+ steps:
+- task: Maven@3
+  displayName: NonMandatoryTestsRun
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m -DrunSuite=**/*.java -Dtests123=NonMandatory1,NonMandatory2 -Dmaven.test.failure.ignore=true -DtestFailureIgnore=true'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'

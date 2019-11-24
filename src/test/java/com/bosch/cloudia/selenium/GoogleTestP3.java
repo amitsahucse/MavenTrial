@@ -48,7 +48,7 @@ public class GoogleTestP3 {
 		sh = new ScreenshotHelper();
 	}
 	
-	@Tag("Mandatory3")
+	@Tag("NonMandatory2")
 	@Test
 	public void grafanaLoginMethod() {
 

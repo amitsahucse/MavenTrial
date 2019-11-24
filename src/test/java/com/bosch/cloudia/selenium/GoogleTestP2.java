@@ -49,7 +49,7 @@ public class GoogleTestP2 {
 		throw new Exception();
 	}
 	
-	@Tag("Mandatory3")
+	@Tag("NonMandatory1")
 	@Test
 	public void grafanaLoginMethod() {
 
