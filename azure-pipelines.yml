@@ -20,7 +20,7 @@ pool:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'test'
-    
+
  steps:
 - task: Maven@3
   displayName: NonMandatoryTestsRun
