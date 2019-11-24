@@ -14,7 +14,7 @@ steps:
   displayName: MandatoryTests
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m -DrunSuite=**/*.java -Dtests123=Mandatory'
+    mavenOptions: '-Xmx3072m -DrunSuite=**/*.java -Dtests123=Mandatory,Mandatory3 -Dmaven.test.failure.ignore=true -DtestFailureIgnore=true'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
