@@ -41,7 +41,7 @@ public class GoogleTest {
 		driver = OpenChromeBrowser.openURL(properties.getProperty("google.url"));
 		
 		sh = new ScreenshotHelper();
-		throw new Exception();
+		Assertions.assertTrue(true);
 	}
 
 	@AfterAll
