@@ -23,7 +23,7 @@ public class OpenChromeBrowser {
 
 	public static WebDriver openURL(String url) {
         Properties properties = new ReadProperties().getFile();
-        String version = properties.getProperty("chromedriver.version");
+        String version = "78.0.3904.70";
 
 		WebDriverManager.chromedriver().version(version).setup();
 
