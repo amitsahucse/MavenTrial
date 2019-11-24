@@ -35,7 +35,7 @@ public class OpenChromeBrowser {
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--disable-browser-side-navigation");
 		options.addArguments("--disable-gpu");
-//		options.addArguments("headless");
+		options.addArguments("headless");
 		WebDriver driver = new ChromeDriver(options);
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
