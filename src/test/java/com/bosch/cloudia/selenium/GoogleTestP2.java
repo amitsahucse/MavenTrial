@@ -54,7 +54,7 @@ public class GoogleTestP2 {
 	public void grafanaLoginMethod() {
 
 		System.out.println("the Screenshot is taken");
-		Assertions.assertTrue(true);
+		Assertions.assertTrue(false);
 	}
 
 	@AfterAll
